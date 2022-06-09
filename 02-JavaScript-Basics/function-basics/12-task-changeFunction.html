@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Следующая функция возвращает true, если параметр age больше 18.
+        // В ином случае она задаёт вопрос confirm и возвращает его результат.
+
+        // function checkAge(age) {
+        // if (age > 18) {
+        //     return true;
+        // } else {
+        //     return confirm('Родители разрешили?');
+        // }
+        // }
+
+        // Перепишите функцию, чтобы она делала то же самое, но без if, в одну строку.
+        // Сделайте два варианта функции checkAge:
+        // Используя оператор ?
+        // Используя оператор ||
+
+        function checkAge(age) {
+            return (age > 18) ? true : confirm ('Parents know?');
+        }
+
+        function checkAge(age) {
+            return (age > 18) || confirm('Parents know?');
+        }
+
+    </script>
+</body>
+</html>
